@@ -21,31 +21,26 @@ The current implementation supports a catalog of distinct computational tasks. A
 *   `blender_render`: Renders a 3D scene using Blender's command-line interface.
 *   `python_script_runner`: Executes a whitelisted Python script for data analysis (e.g., using `numpy`).
 
-### How to Run the Full Stack
+### How to Run the Demonstration
+
+We have created simple scripts to automate the launch of the entire network stack.
 
 1.  **Prerequisites:** Python 3.8+, Blender, Git.
 2.  **Clone the repository:** `git clone https://github.com/Esrbwt1/aegis.git`
-3.  **Set up the environment:**
+3.  **Set up the environment (only needs to be done once):**
     ```bash
     cd aegis
     python3 -m venv venv
     source venv/bin/activate  # or .\venv\Scripts\activate on Windows
     pip install -r requirements.txt 
     ```
-4.  **In Terminal 1, run the Ledger Server:**
-    ```bash
-    uvicorn ledger_server:app --port 9000
-    ```
-5.  **In Terminal 2, run the Provider Node:**
-    ```bash
-    uvicorn provider_node:app --reload
-    ```
-6.  **In Terminal 3, run the Requester Node:**
-    *   *(To run the Python analysis, no changes are needed in `requester_node.py`)*
-    *   *(To run the Blender render, edit `requester_node.py` to request the `blender_render` task type)*
-    ```bash
-    python requester_node.py
-    ```
+4.  **Launch the Network:**
+    *   Navigate to the `scripts` folder.
+    *   On Windows, double-click `run_aegis_windows.bat`.
+    *   *(On macOS/Linux, run `chmod +x run_aegis_linux_macos.sh` then `./run_aegis_linux_macos.sh`)*
+5.  **Observe:** Three terminal windows will open, launching the Ledger, Provider, and Requester in sequence.
+6.  **Shut Down:**
+    *   Simply double-click `stop_aegis_windows.bat` to terminate all server processes.
 
 ## Roadmap
 
