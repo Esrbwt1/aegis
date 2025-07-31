@@ -27,17 +27,21 @@ Aegis is architected to solve this crisis by building a new foundation for AI fr
 Aegis is a four-layer protocol designed for security, scalability, and performance.
 
 **Layer 1: The Decentralized Compute Layer (DCL) - "The Grid"**
+
 A global peer-to-peer network where anyone, from individuals with idle laptops to large data centers, can provide computational power (CPU, GPU, TPU) to the network. Tasks are containerized (e.g., using Docker) and dispatched by a scheduler to available Provider Nodes.
 
 **Layer 2: The Trust Protocol**
+
 This is the core innovation of Aegis, providing an unbreakable shield of integrity for all network operations.
 *   **Verifiable Compute:** Aegis will integrate multiple levels of verification. Initially, this can involve simple proof-of-work (as demonstrated by our successful 3D rendering prototype). The roadmap includes integration with Trusted Execution Environments (TEEs) like Intel SGX for hardware-level security and Zero-Knowledge Proofs (ZKPs) for mathematical guarantees of correct execution.
 *   **Explainable AI (XAI) Protocol:** It will be mandatory for all AI "Skill" modules on the platform to implement a standardized `explain()` interface. This ensures that the outputs of AI models are not just results, but are accompanied by human-readable explanations, fostering trust and accountability.
 
 **Layer 3: The Data & Skill Exchange (DSE) - "The Oracle"**
+
 A marketplace built on The Grid for the secure monetization of data and AI models. Users can license private data streams for federated learning without exposing the raw data, and developers can publish reusable AI "Skills" (e.g., sentiment analysis, image recognition) and earn micro-transaction fees for their use.
 
 **Layer 4: The Aegis Agent & Runtime**
+
 A user-centric application that acts as a personalized, autonomous AI assistant. The Agent runs locally, preserving user privacy, while seamlessly dispatching complex tasks to the Aegis network to be executed on The Grid, utilizing Skills and Data from the DSE.
 
 ---
