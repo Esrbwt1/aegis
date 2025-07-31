@@ -42,15 +42,15 @@ A user-centric application that acts as a personalized, autonomous AI assistant.
 
 ---
 
-### **3. Proof of Concept: The "Toy Protocol" v0.0.3-alpha**
+### 3. Proof of Concept: The "Alpha Protocol" v0.1.0
 
-We have successfully implemented a functional prototype of the Aegis core loop. This prototype consists of:
-1.  A **Provider Node** (`provider_node.py`) built with FastAPI, capable of accepting a 3D rendering task.
-2.  A **Requester Node** (`requester_node.py`) that can delegate this task to the Provider.
-3.  A **Proof-of-Work Mechanism** where the Provider uses the Blender command-line interface to perform the computation and generate a `.png` image file, providing verifiable evidence of task completion.
-4.  **Robust Verification Logic** that correctly identifies and renames the output file, ensuring a seamless experience for the requester.
+We have successfully implemented and tested the Aegis Alpha Protocol, a dynamic, multi-component network that proves the core theses of the project. The current implementation consists of:
 
-This working prototype, though simple, proves the viability of the fundamental concepts of decentralized task execution and verification that underpin the entire Aegis network.
+1.  A **Ledger Server** that acts as a dynamic network registry where providers can announce their availability and capabilities.
+2.  A multi-task **Provider Node** architected with a "Task Catalog." It currently advertises and executes two distinct capabilities: `blender_render` for 3D proof-of-work and `python_script_runner` for data analysis, demonstrating the platform's extensibility.
+3.  A ledger-aware **Requester Node** capable of discovering providers that support a specific task type and delegating work accordingly.
+
+This working prototype proves the viability of a decentralized, multi-task computational marketplace and serves as the foundation for our Phase 1 engagement with the scientific community.
 
 ---
 

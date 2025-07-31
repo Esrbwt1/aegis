@@ -1,0 +1,4 @@
+--- Aegis Scientific Analysis Report ---
+Source Data File: input_data.txt
+Mean: 16.4250
+Standard Deviation: 2.4636
