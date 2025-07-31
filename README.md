@@ -27,7 +27,7 @@ This repository contains a working prototype demonstrating the fundamental trans
 ### How to Run the Prototype
 
 1.  **Prerequisites:** Python 3.8+, Blender, Git.
-2.  **Clone the repository:** `git clone https://github.com/YOUR_USERNAME/aegis.git`
+2.  **Clone the repository:** `git clone https://github.com/Esrbwt1/aegis.git`
 3.  **Set up the environment:**
     ```bash
     cd aegis
