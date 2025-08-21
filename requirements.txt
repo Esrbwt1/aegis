@@ -1,0 +1,6 @@
+pandas
+numpy
+fairlearn
+jinja2
+plotly
+scikit-learn
